@@ -1,0 +1,6 @@
+alexa-project/
+venv/
+*.zip
+.idea/
+.vscode/
+.DS_Store
