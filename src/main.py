@@ -6,7 +6,7 @@ def lambda_handler(event, context):
     message = ''
     if intent == 'Add_to_List':
         request_url = 'https://brickhackv-232001.appspot.com/add_item?item_keyword='
-        food_keyword = event['request']['intent']['slots']['name']['value']
+        food_keyword = event['request']['intent']['slots']['food']['value']
         requests.get(request_url + food_keyword)
         message = 'Added ' + food_keyword + ' to list'
     if intent == 'Output_List':
